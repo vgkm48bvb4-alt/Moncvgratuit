@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mon CV gratuit</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Fraunces:wght@500;700&family=Hanken+Grotesk:wght@400;600;700&display=swap">
+<style>
+:root{--bg:#f6f7f5;--fg:#17201c;--card:#fff;--line:#d9ded9;--mut:#5d6a63;--brand:#1f4d3a;--sun:#e8a823;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121815;--fg:#e9eee9;--card:#1b241f;--line:#2e3a33;--mut:#9aa8a0;--brand:#6fc29a}}
+:root[data-theme="dark"]{--bg:#121815;--fg:#e9eee9;--card:#1b241f;--line:#2e3a33;--mut:#9aa8a0;--brand:#6fc29a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 "Hanken Grotesk",system-ui,sans-serif}
+.ui{max-width:760px;margin:0 auto;padding:16px}
+h1.app{font:800 26px/1.15 Sora,sans-serif;margin:8px 0 4px}
+.sub{color:var(--mut);margin:0 0 16px}
+.steps{display:flex;gap:6px;margin-bottom:16px}
+.steps button{flex:1;padding:10px 4px;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:10px;font:600 14px "Hanken Grotesk";cursor:pointer}
+.steps button.on{background:var(--brand);border-color:var(--brand);color:#fff}
+:root[data-theme="dark"] .steps button.on{color:#0c1410}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .steps button.on{color:#0c1410}}
+.panel{display:none}.panel.on{display:block}
+fieldset{border:1px solid var(--line);border-radius:12px;background:var(--card);margin:0 0 14px;padding:12px 14px}
+legend{font:700 15px Sora,sans-serif;padding:0 6px}
+label{display:block;font-size:13px;color:var(--mut);margin:8px 0 3px}
+input,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);font:16px "Hanken Grotesk",sans-serif}
+textarea{min-height:76px;resize:vertical}
+input:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid var(--sun);outline-offset:1px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.blk{border-top:1px dashed var(--line);margin-top:10px;padding-top:6px}
+.btn{padding:11px 16px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--fg);font:600 15px "Hanken Grotesk";cursor:pointer}
+.btn.pri{background:var(--brand);border-color:var(--brand);color:#fff}
+:root[data-theme="dark"] .btn.pri{color:#0c1410}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.pri{color:#0c1410}}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.tpls{display:grid;gap:8px;margin-bottom:12px}
+.tpl{text-align:left;padding:12px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--fg);cursor:pointer;font:15px "Hanken Grotesk"}
+.tpl b{display:block;font:700 16px Sora,sans-serif}.tpl span{color:var(--mut);font-size:14px}
+.tpl.on{border-color:var(--brand)}
+.sw{display:flex;gap:10px;margin:8px 0 14px}
+.sw button{width:36px;height:36px;border-radius:50%;border:3px solid var(--card);box-shadow:0 0 0 1px var(--line);cursor:pointer}
+.sw button.on{box-shadow:0 0 0 3px var(--fg)}
+#box{width:100%;overflow:hidden;border:1px solid var(--line);border-radius:6px;background:#fff;margin-top:6px}
+#stage{width:794px;transform-origin:top left}
+.wave{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px;margin-top:14px}
+.wave p{margin:0 0 8px}.wave strong{font:800 20px Sora,sans-serif;letter-spacing:.02em}
+/* ====== CV (toujours sur papier blanc) ====== */
+.cv{width:794px;min-height:1123px;background:#fff;color:#222;font-size:13px;line-height:1.45;position:relative;--ac:#1f2a44;--tint:color-mix(in srgb,var(--ac) 9%,#fff)}
+.cv h1,.cv h2,.cv h3,.cv p,.cv ul{margin:0}.cv ul{padding-left:16px}.cv li{margin:2px 0}
+.cv .ph{background:var(--tint);color:var(--ac);display:flex;align-items:center;justify-content:center;font-weight:800;overflow:hidden}.cv .ph img{width:100%;height:100%;object-fit:cover}
+.t-plateau{font-family:Archivo,"Hanken Grotesk",Arial,sans-serif}
+.t-plateau header{background:var(--ac);color:#fff;display:flex;justify-content:space-between;min-height:190px}
+.t-plateau header>div{padding:44px 40px}.t-plateau header small{font-size:22px;font-weight:300;display:block}
+.t-plateau h1{font-size:44px;font-weight:800;line-height:1}.t-plateau header p{margin-top:12px;font-weight:700;letter-spacing:.04em;opacity:.8}
+.t-plateau .ph{width:230px;border-radius:0}
+.t-plateau .bar{background:color-mix(in srgb,var(--ac) 82%,#fff);color:#fff;display:flex;gap:28px;padding:12px 40px;font-size:12.5px}
+.t-plateau .cols{display:grid;grid-template-columns:240px 1fr;min-height:880px}
+.t-plateau aside{background:var(--tint);padding:24px 22px;border-right:1px solid #dde}
+.t-plateau main{padding:24px 36px}
+.t-plateau h2{font:800 15px Sora,sans-serif;color:var(--ac);border-bottom:2px solid var(--ac);padding-bottom:3px;margin:18px 0 8px}
+.t-plateau aside h2:first-child,.t-plateau main h2:first-child{margin-top:0}
+.t-plateau h3{font-size:13.5px;color:var(--ac)}.t-plateau .d{color:#667;font-size:12px}
+.t-lagune{font-family:Sora,"Hanken Grotesk",Arial,sans-serif}
+.t-lagune .top{background:var(--ac);height:215px;color:#fff;padding:58px 40px 0 322px}
+.t-lagune h1{font-size:34px;font-weight:800;line-height:1.1}.t-lagune .top p{font-size:19px;font-weight:300;margin-top:8px}
+.t-lagune .cols{display:grid;grid-template-columns:286px 1fr;min-height:908px}
+.t-lagune aside{background:#e6e8ea;padding:140px 28px 24px;position:relative}
+.t-lagune .ph{position:absolute;top:-122px;left:34px;width:214px;height:214px;border-radius:50%;border:6px solid #fff;font-size:60px}
+.t-lagune h2{font-size:17px;font-weight:800;letter-spacing:.14em;color:var(--ac);border-bottom:2px solid var(--ac);padding-bottom:4px;margin:22px 0 10px;text-transform:uppercase}
+.t-lagune aside h2:first-of-type{margin-top:0}
+.t-lagune main{padding:22px 36px 22px 40px;position:relative}
+.t-lagune main:before{content:"";position:absolute;left:22px;top:28px;bottom:30px;width:2px;background:var(--ac);opacity:.7}
+.t-lagune main h2{margin-top:20px;position:relative}.t-lagune main h2:first-child{margin-top:0}
+.t-lagune main h2:before{content:"";position:absolute;left:-26px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--ac)}
+.t-lagune .it{margin-bottom:12px;position:relative}.t-lagune .it:before{content:"";position:absolute;left:-23px;top:5px;width:8px;height:8px;border-radius:50%;background:#fff;border:2px solid var(--ac)}
+.t-lagune h3{font-size:13.5px}.t-lagune .d{float:right;font-size:12px;color:#667}.t-lagune .o{color:#445}
+.t-lagune .ct p{margin:7px 0;font-size:12.5px;word-break:break-word}
+.t-savane{font-family:"Hanken Grotesk",Arial,sans-serif;--sun:#e8a823}
+.t-savane .top{background:var(--ac);color:#fff;padding:36px 44px 0;display:flex;gap:30px;align-items:flex-end;position:relative;min-height:230px;
+background-image:radial-gradient(circle at 100% 0,transparent 0 34px,rgba(232,168,35,.9) 34px 40px,transparent 40px 56px,rgba(255,255,255,.18) 56px 62px,transparent 62px 80px,rgba(232,168,35,.55) 80px 86px,transparent 86px)}
+.t-savane .ph{width:170px;height:200px;border-radius:85px 85px 0 0;border:5px solid var(--sun);border-bottom:0;font-size:52px}
+.t-savane .top div{padding-bottom:30px}.t-savane h1{font:700 40px/1.05 Fraunces,Georgia,serif}.t-savane .top p{margin-top:10px;font-size:17px;color:var(--sun);font-weight:700}
+.t-savane .cols{display:grid;grid-template-columns:1fr 230px;gap:0;min-height:890px}
+.t-savane main{padding:28px 30px 24px 44px}.t-savane aside{padding:28px 36px 24px 22px;border-left:3px solid var(--sun);margin:24px 0}
+.t-savane h2{font:700 19px Fraunces,Georgia,serif;color:var(--ac);margin:20px 0 8px;display:flex;align-items:center;gap:10px}
+.t-savane h2:after{content:"";flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--sun) 0 6px,transparent 6px 11px)}
+.t-savane h2:first-child{margin-top:0}.t-savane aside h2{font-size:17px}
+.t-savane h3{font-size:14px}.t-savane .d{color:#6a6a55;font-size:12px;font-weight:600}.t-savane .it{margin-bottom:12px}.t-savane .ct p{margin:6px 0;font-size:12.5px;word-break:break-word}
+.t-savane li::marker{color:var(--sun)}
+@page{size:A4;margin:0}
+@media print{body{background:#fff}.ui>*:not(#pv),#pv>*:not(#box){display:none!important}.ui{padding:0;max-width:none}#box{border:0;height:auto!important;overflow:visible;margin:0}#stage{transform:none!important}.cv{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+</style></head><body>
+<div class="ui">
+<h1 class="app">Mon CV gratuit</h1>
+<p class="sub">Remplis, choisis un modèle, télécharge ton CV en PDF. Tout reste dans ton téléphone.</p>
+<div class="steps" role="tablist"><button class="on" data-s="1">1. Mes infos</button><button data-s="2">2. Modèle</button><button data-s="3">3. Télécharger</button></div>
+
+<section class="panel on" id="p1">
+<fieldset><legend>Identité</legend>
+<div class="row"><div><label for="f_first">Prénom(s)</label><input id="f_first" data-k="first" autocomplete="given-name"></div><div><label for="f_last">Nom</label><input id="f_last" data-k="last" autocomplete="family-name"></div></div>
+<label for="f_title">Poste visé ou titre</label><input id="f_title" data-k="title">
+<label for="f_photo">Photo (facultatif)</label><input id="f_photo" type="file" accept="image/*">
+</fieldset>
+<fieldset><legend>Contact</legend>
+<label for="f_email">E-mail</label><input id="f_email" data-k="email" type="email" autocomplete="email">
+<div class="row"><div><label for="f_phone">Téléphone</label><input id="f_phone" data-k="phone" type="tel"></div><div><label for="f_city">Ville</label><input id="f_city" data-k="city"></div></div>
+</fieldset>
+<fieldset><legend>Profil</legend><label for="f_profile">3 à 4 phrases : qui tu es, ce que tu sais faire, ce que tu cherches</label><textarea id="f_profile" data-k="profile"></textarea></fieldset>
+<fieldset><legend>Expériences, stages, bénévolat</legend><div id="l_exp"></div><div class="btns"><button class="btn" data-add="exp">Ajouter une expérience</button></div></fieldset>
+<fieldset><legend>Formation</legend><div id="l_edu"></div><div class="btns"><button class="btn" data-add="edu">Ajouter une formation</button></div></fieldset>
+<fieldset><legend>Compétences et langues</legend>
+<label for="f_skills">Compétences (une par ligne)</label><textarea id="f_skills" data-k="skills"></textarea>
+<label for="f_langs">Langues (une par ligne)</label><textarea id="f_langs" data-k="langs"></textarea></fieldset>
+<div class="btns"><button class="btn pri" data-go="2">Choisir un modèle</button><button class="btn" id="clr">Tout effacer</button></div>
+</section>
+
+<section class="panel" id="p2">
+<div class="tpls" id="tpls"></div>
+<div>Couleur principale</div><div class="sw" id="sw"></div>
+<div class="btns"><button class="btn" data-go="1">Modifier mes infos</button><button class="btn pri" data-go="3">Continuer</button></div>
+</section>
+
+<section class="panel" id="p3">
+<div class="btns"><button class="btn pri" id="dl">Télécharger en PDF</button><button class="btn" data-go="2">Changer de modèle</button></div>
+<p class="sub">Dans la fenêtre d’impression, choisis « Enregistrer en PDF » et mets les marges sur « Aucune ».</p>
+<div class="wave"><p>Ce site est gratuit. S’il t’a servi, tu peux le soutenir par Wave, sans obligation :</p><p><strong>05 94 60 07 19</strong> (+225)</p><button class="btn" id="sup">Soutenir ici</button> <span id="supm" class="sub"></span></div>
+</section>
+
+<div id="pv" style="display:none"><div id="box"><div id="stage"></div></div></div>
+</div>
+<script>
+const SAMPLE={first:"Awa",last:"KOFFI",title:"Assistante en communication",email:"awa.koffi@email.ci",phone:"+225 07 00 00 00 00",city:"Abidjan, Cocody",profile:"Étudiante en 3e année de communication, j’aime raconter des histoires utiles à ma communauté. Je sais animer des réseaux sociaux, rédiger pour le web et concevoir des visuels. Je cherche un stage pour mettre ces compétences au service d’une équipe.",skills:"Canva\nWordPress\nRédaction web\nAnimation de réseaux sociaux\nTravail en équipe",langs:"Français — langue maternelle\nAnglais — intermédiaire",exp:[{r:"Stagiaire communication",o:"Radio de quartier, Yopougon",d:"Été 2025",t:"Animation de la page Facebook de la radio\nCouverture de 4 événements locaux"},{r:"Bénévole terrain",o:"Association jeunesse, Abidjan",d:"2024",t:"Sensibilisation des jeunes dans les quartiers\nCollecte d’avis par sondage"}],edu:[{r:"Licence en Communication",o:"Université Félix Houphouët-Boigny",d:"2022 – en cours"},{r:"Baccalauréat série A",o:"Lycée moderne d’Abobo",d:"2022"}],photo:"",tpl:"plateau",ac:"#1f2a44"};
+const TPL={plateau:{n:"Plateau",d:"Bandeau net et photo à droite. Pour l’administration, la banque, le droit.",ac:"#1f2a44"},lagune:{n:"Lagune",d:"Photo ronde et chronologie. Pour la tech, le marketing, les médias.",ac:"#2b3a55"},savane:{n:"Savane",d:"Bandeau à motif wax, photo en arche. Pour la communication, l’ONG, les métiers créatifs.",ac:"#1f4d3a"}};
+const COL=["#1f2a44","#1f4d3a","#6b1e2e","#a4501a","#4a2c7a","#14606b"];
+let S;try{S=JSON.parse(localStorage.getItem("cvgratuit1"))}catch(e){}if(!S||!S.exp)S=JSON.parse(JSON.stringify(SAMPLE));
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=t=>String(t||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ls=t=>String(t||"").split("\n").map(x=>x.trim()).filter(Boolean);
+const ul=t=>ls(t).length?"<ul>"+ls(t).map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>":"";
+function save(){try{localStorage.setItem("cvgratuit1",JSON.stringify(S))}catch(e){}}
+const ph=()=>'<div class="ph">'+(S.photo?'<img alt="" src="'+S.photo+'">':esc((S.first[0]||"")+(S.last[0]||"")))+"</div>";
+const items=(a,k)=>a.map(x=>'<div class="it"><span class="d">'+esc(x.d)+"</span><h3>"+esc(x.r)+'</h3><div class="o">'+esc(x.o)+"</div>"+(k?ul(x.t):"")+"</div>").join("");
+const sec=(h,b)=>b?"<h2>"+h+"</h2>"+b:"";
+const nm=()=>esc(S.first)+" "+esc(S.last);
+const R={
+plateau:()=>'<div class="cv t-plateau"><header><div><small>'+esc(S.first)+"</small><h1>"+esc(S.last)+"</h1><p>"+esc(S.title)+"</p></div>"+ph()+'</header><div class="bar"><span>'+esc(S.email)+"</span><span>"+esc(S.phone)+"</span><span>"+esc(S.city)+'</span></div><div class="cols"><aside>'+sec("COMPÉTENCES",ul(S.skills))+sec("LANGUES",ul(S.langs))+sec("FORMATION",items(S.edu,0))+"</aside><main>"+sec("PROFIL","<p>"+esc(S.profile)+"</p>")+sec("EXPÉRIENCES",items(S.exp,1))+"</main></div></div>",
+lagune:()=>'<div class="cv t-lagune"><div class="top"><h1>'+nm()+"</h1><p>"+esc(S.title)+'</p></div><div class="cols"><aside>'+ph()+'<h2>Contact</h2><div class="ct"><p>'+esc(S.phone)+"</p><p>"+esc(S.email)+"</p><p>"+esc(S.city)+"</p></div>"+sec("Compétences",ul(S.skills))+sec("Langues",ul(S.langs))+"</aside><main>"+sec("Profil","<p>"+esc(S.profile)+"</p>")+sec("Expériences",items(S.exp,1))+sec("Formation",items(S.edu,0))+"</main></div></div>",
+savane:()=>'<div class="cv t-savane"><div class="top">'+ph()+"<div><h1>"+nm()+"</h1><p>"+esc(S.title)+'</p></div></div><div class="cols"><main>'+sec("Profil","<p>"+esc(S.profile)+"</p>")+sec("Expériences",items(S.exp,1))+sec("Formation",items(S.edu,0))+'</main><aside><h2>Contact</h2><div class="ct"><p>'+esc(S.phone)+"</p><p>"+esc(S.email)+"</p><p>"+esc(S.city)+"</p></div>"+sec("Compétences",ul(S.skills))+sec("Langues",ul(S.langs))+"</aside></div></div>"};
+function draw(){const st=$("#stage");st.innerHTML=R[S.tpl]();st.firstChild.style.setProperty("--ac",S.ac);fit()}
+function fit(){const b=$("#box"),st=$("#stage");if(!b.clientWidth)return;const k=Math.min(1,b.clientWidth/794);st.style.transform="scale("+k+")";b.style.height=(st.offsetHeight*k)+"px"}
+addEventListener("resize",fit);
+function lists(){["exp","edu"].forEach(k=>{$("#l_"+k).innerHTML=S[k].map((x,i)=>'<div class="blk"><label>'+(k=="exp"?"Poste ou rôle":"Diplôme")+'</label><input data-l="'+k+'" data-i="'+i+'" data-f="r" value="'+esc(x.r)+'"><div class="row"><div><label>'+(k=="exp"?"Structure":"École")+'</label><input data-l="'+k+'" data-i="'+i+'" data-f="o" value="'+esc(x.o)+'"></div><div><label>Dates</label><input data-l="'+k+'" data-i="'+i+'" data-f="d" value="'+esc(x.d)+'"></div></div>'+(k=="exp"?'<label>Ce que tu as fait (une ligne par action)</label><textarea data-l="exp" data-i="'+i+'" data-f="t">'+esc(x.t)+"</textarea>":"")+'<div class="btns"><button class="btn" data-del="'+k+'" data-i="'+i+'">Supprimer</button></div></div>').join("")})}
+function fields(){$$("[data-k]").forEach(e=>e.value=S[e.dataset.k]||"")}
+function tpls(){$("#tpls").innerHTML=Object.entries(TPL).map(([k,v])=>'<button class="tpl'+(S.tpl==k?" on":"")+'" data-t="'+k+'"><b>'+v.n+"</b><span>"+v.d+"</span></button>").join("");$("#sw").innerHTML=COL.map(c=>'<button aria-label="Couleur '+c+'" class="'+(S.ac==c?"on":"")+'" style="background:'+c+'" data-c="'+c+'"></button>').join("")}
+function step(n){$$(".panel").forEach((p,i)=>p.classList.toggle("on",i+1==n));$$(".steps button").forEach((b,i)=>b.classList.toggle("on",i+1==n));$("#pv").style.display=n>1?"block":"none";if(n>1){draw()}scrollTo(0,0)}
+document.addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;
+if(t.dataset.s)step(+t.dataset.s);if(t.dataset.go)step(+t.dataset.go);
+if(t.dataset.t){S.tpl=t.dataset.t;S.ac=TPL[S.tpl].ac;save();tpls();draw()}
+if(t.dataset.c){S.ac=t.dataset.c;save();tpls();draw()}
+if(t.dataset.add){S[t.dataset.add].push({r:"",o:"",d:"",t:""});save();lists()}
+if(t.dataset.del){S[t.dataset.del].splice(+t.dataset.i,1);save();lists()}
+if(t.id=="clr"&&confirm("Effacer toutes les infos ?")){S=Object.assign(JSON.parse(JSON.stringify(SAMPLE)),{first:"",last:"",title:"",email:"",phone:"",city:"",profile:"",skills:"",langs:"",exp:[{r:"",o:"",d:"",t:""}],edu:[{r:"",o:"",d:""}],tpl:S.tpl,ac:S.ac});save();fields();lists()}
+if(t.id=="dl")print();
+if(t.id=="sup"){const m=$("#supm");try{navigator.clipboard.writeText("0594600719").then(()=>m.textContent="Numéro copié.",()=>m.textContent="Note le numéro ci-dessus.")}catch(x){m.textContent="Note le numéro ci-dessus."}}});
+document.addEventListener("input",e=>{const t=e.target;if(t.dataset.k){S[t.dataset.k]=t.value;save()}if(t.dataset.l){S[t.dataset.l][+t.dataset.i][t.dataset.f]=t.value;save()}});
+$("#f_photo").addEventListener("change",e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const c=document.createElement("canvas"),k=Math.min(1,400/Math.max(im.width,im.height));c.width=im.width*k;c.height=im.height*k;c.getContext("2d").drawImage(im,0,0,c.width,c.height);S.photo=c.toDataURL("image/jpeg",.85);try{save()}catch(x){}};im.src=r.result};r.readAsDataURL(f)});
+fields();lists();tpls();
+</script></body></html>
